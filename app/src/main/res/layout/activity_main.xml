@@ -1,21 +1,115 @@
-<android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent">
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Hello world!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</android.support.constraint.ConstraintLayout>
+        android:columnCount="3"
+        android:rowCount="3">
 
+        <Button
+            android:id="@+id/col_1_fila_1"
+            android:layout_width="104dp"
+            android:layout_height="93dp"
+            android:layout_margin="10dp"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/col_2_fila_1"
+            android:layout_width="104dp"
+            android:layout_height="93dp"
+            android:layout_margin="10dp"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/col_3_fila_1"
+            android:layout_width="104dp"
+            android:layout_height="93dp"
+            android:layout_margin="10dp"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/col_1_fila_2"
+            android:layout_width="104dp"
+            android:layout_height="93dp"
+            android:layout_margin="10dp"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/col_2_fila_2"
+            android:layout_width="104dp"
+            android:layout_height="93dp"
+            android:layout_margin="10dp"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/col_3_fila_2"
+            android:layout_width="104dp"
+            android:layout_height="93dp"
+            android:layout_margin="10dp"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/col_1_fila_3"
+            android:layout_width="104dp"
+            android:layout_height="93dp"
+            android:layout_margin="10dp"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/col_2_fila_3"
+            android:layout_width="104dp"
+            android:layout_height="93dp"
+            android:layout_margin="10dp"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/col_3_fila_3"
+            android:layout_width="104dp"
+            android:layout_height="93dp"
+            android:layout_margin="10dp"
+            android:textSize="50sp" />
+
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/turno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Turno: "
+            android:textSize="23sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/pts_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Puntos: "
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/pts_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="end"
+                android:text=":Puntos"
+                android:textSize="23sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
