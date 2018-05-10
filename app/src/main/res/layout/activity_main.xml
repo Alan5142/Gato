@@ -82,34 +82,16 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/turno"
+            android:id="@+id/state"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Turno: "
             android:textSize="23sp" />
 
-        <LinearLayout
+        <Button
+            android:id="@+id/restart"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="1">
-
-            <TextView
-                android:id="@+id/pts_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:text="Puntos: "
-                android:textSize="23sp" />
-
-            <TextView
-                android:id="@+id/pts_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:gravity="end"
-                android:text=":Puntos"
-                android:textSize="23sp" />
-
-        </LinearLayout>
+            android:text="Reiniciar" />
     </LinearLayout>
 </LinearLayout>
