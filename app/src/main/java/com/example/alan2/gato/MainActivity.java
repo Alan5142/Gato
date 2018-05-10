@@ -1,5 +1,6 @@
 package com.example.alan2.gato;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -18,6 +19,9 @@ public class MainActivity extends AppCompatActivity
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
+		final MediaPlayer player = MediaPlayer.create(this, R.raw.miichannel);
+		player.start();
+		
 		final MainActivity thisActivity = this;
 		Button restartButton = findViewById(R.id.restart);
 		restartButton.setOnClickListener(new View.OnClickListener()
@@ -25,6 +29,7 @@ public class MainActivity extends AppCompatActivity
 			@Override
 			public void onClick(View v)
 			{
+				player.pause();
 				thisActivity.recreate();
 			}
 		});
