@@ -148,9 +148,9 @@ public class Game
 						m_grid.getStatus(2, 2) == CellStatus.Circle;
 		
 		boolean diagonalRightToLeftP1 =
-				m_grid.getStatus(0, 0) == CellStatus.Circle &&
+				m_grid.getStatus(0, 2) == CellStatus.Circle &&
 						m_grid.getStatus(1, 1) == CellStatus.Circle &&
-						m_grid.getStatus(2, 2) == CellStatus.Circle;
+						m_grid.getStatus(2, 0) == CellStatus.Circle;
 		
 		if (diagonalLeftToRightP1 || diagonalRightToLeftP1)
 		{
@@ -159,9 +159,9 @@ public class Game
 		}
 		
 		boolean diagonalLeftToRightP2 =
-				m_grid.getStatus(0, 0) == CellStatus.Cross &&
+				m_grid.getStatus(0, 2) == CellStatus.Cross &&
 						m_grid.getStatus(1, 1) == CellStatus.Cross &&
-						m_grid.getStatus(2, 2) == CellStatus.Cross;
+						m_grid.getStatus(2, 0) == CellStatus.Cross;
 		
 		boolean diagonalRightToLeftP2 =
 				m_grid.getStatus(0, 0) == CellStatus.Cross &&
